@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,noimageindex,nosnippet">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,noimageindex,nosnippet">
+  <meta name="bingbot" content="noindex,nofollow,noarchive,noimageindex,nosnippet">
+  <title>Slide Viewer</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Lecture Slides</a>
+      <nav class="header-nav"><a id="chapterLink" href="#">Chapter</a></nav>
+    </div>
+  </header>
+
+  <main class="page-shell viewer-shell">
+    <section class="slide-page-header">
+      <div>
+        <a id="backGridTop" class="eyebrow-link" href="#">← Back to lecture thumbnails</a>
+        <h1 id="viewerChapterTitle">Chapter</h1>
+      </div>
+      <div id="slideCounter" class="slide-counter"></div>
+    </section>
+
+    <nav class="viewer-nav" aria-label="Slide navigation">
+      <button id="prevBtn" class="nav-action prev">← Previous</button>
+      <a id="backGrid" class="nav-action back" href="#">Back to Lecture Thumbnails</a>
+      <button id="nextBtn" class="nav-action next">Next →</button>
+    </nav>
+
+    <figure class="slide-stage">
+      <img id="slideImage" alt="lecture slide">
+    </figure>
+
+    <section class="comments-section">
+      <div class="section-title-row">
+        <div>
+          <div class="section-kicker">Discussion</div>
+          <h2>Comments</h2>
+        </div>
+        <div id="commentCountLabel" class="comment-count-label"></div>
+      </div>
+
+      <div id="giscusSetupNotice" class="giscus-setup-notice" hidden>
+        Giscus is not configured yet. Open <code>static/config.js</code> and enter the repository/category values generated at giscus.app.
+      </div>
+      <div id="giscusRoot" class="giscus"></div>
+    </section>
+  </main>
+
+  <script src="static/config.js"></script>
+  <script src="static/app.js"></script>
+  <script>startViewer();</script>
+</body>
+</html>

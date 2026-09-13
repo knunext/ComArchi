@@ -1,0 +1,40 @@
+{
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "Chapter 1 - Introduction",
+      "slideCount": 412,
+      "revision": 1789211993
+    },
+    {
+      "id": "ch02",
+      "title": "Chapter 2 - Performance",
+      "slideCount": 384,
+      "revision": 1789212256
+    },
+    {
+      "id": "ch03",
+      "title": "Chapter 3.1 - ISA",
+      "slideCount": 475,
+      "revision": 1789221995
+    },
+    {
+      "id": "ch04",
+      "title": "Chapter 3.2 - RISC-V ISA",
+      "slideCount": 298,
+      "revision": 1789222187
+    },
+    {
+      "id": "ch05",
+      "title": "Chapter 3.3 - Digital Logics",
+      "slideCount": 569,
+      "revision": 1789304451
+    },
+    {
+      "id": "ch06",
+      "title": "Chapter 3.4 - RISC-V Datapath",
+      "slideCount": 287,
+      "revision": 1789222692
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,noarchive,noimageindex,nosnippet">
+  <meta name="googlebot" content="noindex,noarchive,noimageindex,nosnippet">
+  <meta name="bingbot" content="noindex,noarchive,noimageindex,nosnippet">
+  <title>Chapter</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body class = "chapter-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Lecture Slides</a>
+      <nav class="header-nav"><a href="index.html">Chapters</a></nav>
+    </div>
+  </header>
+
+  <main class="page-shell wide-shell">
+    <header class="chapter-heading">
+      <a class="eyebrow-link" href="index.html">← All chapters</a>
+      <div class="heading-line">
+        <div>
+          <div class="chapter-title-row">
+            <h1 id="chapterTitle">Chapter</h1>
+            <button id="commentFilterBtn" class="comment-filter-btn" type="button" aria-pressed="false">
+              <span>Comments only</span>
+              <span id="commentFilterCount" class="comment-filter-count">0</span>
+            </button>
+          </div>
+          <p id="chapterMeta" class="meta"></p>
+        </div>
+        <div class="legend" aria-label="Chapter comment summary">
+          <span class="legend-badge total-legend" id="chapterTotalComments">0</span> total
+          &nbsp;&nbsp;
+          <span class="legend-badge unanswered-legend" id="chapterUnansweredComments">0</span> unanswered
+        </div>
+      </div>
+    </header>
+    <section id="slides" class="slide-grid" aria-label="Lecture slide thumbnails"></section>
+  </main>
+
+  <script src="static/config.js"></script>
+  <script src="static/app.js"></script>
+  <script>startChapterPage();</script>
+</body>
+</html>
